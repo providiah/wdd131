@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore Nigeria, the Giant of Africa. Discover its geography, population, culture, landmarks, and weather.">
+
+    <meta name="author" content="Providence Obadiah Ereforokuma">
+
+    <title>Nigeria | Country Page | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+        <!-- Responsive Hero Image -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/nigeria-large.webp" media="(min-width: 700px)">
+
+                <img src="images/nigeria-small.webp" alt="Beautiful landscape representing Nigeria" width="600"
+                    height="400" fetchpriority="high">
+            </picture>
+        </div>
+
+        <!-- Country Data -->
+        <section class="country-data">
+            <h2>Data</h2>
+
+            <div class="data-content">
+                <p><strong>Area:</strong> 923,768 sq km</p>
+
+                <p><strong>Population:</strong> Approximately 230 million</p>
+
+                <p><strong>Capital:</strong> Abuja</p>
+
+                <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+
+                <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+
+                <p><strong>Continent:</strong> Africa</p>
+
+                <p><strong>Time Zone:</strong> UTC +1</p>
+
+                <p><strong>Internet Domain:</strong> .ng</p>
+            </div>
+        </section>
+
+        <!-- Weather Information -->
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <!-- Mobile SVG Weather Icon -->
+            <div class="weather-icon">
+                <img src="images/weather.svg" alt="Partly cloudy weather icon" width="80" height="80">
+            </div>
+
+            <div class="weather-content">
+                <p>
+                    <strong>Temperature:</strong>
+                    <span id="temperature">30</span> °C
+                </p>
+
+                <p>
+                    <strong>Conditions:</strong>
+                    Partly Cloudy
+                </p>
+
+                <p>
+                    <strong>Wind:</strong>
+                    <span id="wind-speed">12</span> km/h
+                </p>
+
+                <p>
+                    <strong>Wind Chill:</strong>
+                    <span id="wind-chill">N/A</span>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span>
+            Providence Obadiah Ereforokuma
+        </p>
+
+        <p>Nigeria | WDD 131 Dynamic Web Fundamentals</p>
+
+        <p>
+            Last Modified:
+            <span id="last-modified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>

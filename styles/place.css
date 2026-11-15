@@ -1,0 +1,225 @@
+/* =====================================
+   GLOBAL CSS VARIABLES
+===================================== */
+
+:root {
+    --primary-color: #008751;
+    --secondary-color: #ffffff;
+    --accent-color: #005c36;
+    --background-color: #f1f5f2;
+    --text-color: #202820;
+    --border-color: #d5e3d9;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* =====================================
+   GENERAL STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 8px solid var(--accent-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* =====================================
+   HERO IMAGE
+===================================== */
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    height: auto;
+    object-fit: cover;
+}
+
+/* =====================================
+   COUNTRY DATA AND WEATHER
+===================================== */
+
+section {
+    background-color: var(--secondary-color);
+    margin: 1.2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+section h2 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.data-content,
+.weather-content {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.data-content p,
+.weather-content p {
+    font-size: 1rem;
+}
+
+strong {
+    color: var(--accent-color);
+}
+
+/* =====================================
+   WEATHER SVG - MOBILE VIEW
+===================================== */
+
+.weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.weather-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+/* =====================================
+   LARGE SCREEN / DESKTOP VIEW
+===================================== */
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 1.8rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        position: relative;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+    }
+
+    section {
+        position: absolute;
+        width: 310px;
+        margin: 0;
+        padding: 1.4rem;
+        background-color: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 3px 12px var(--shadow-color);
+        border-radius: 5px;
+    }
+
+    .country-data {
+        top: 35px;
+        left: 35px;
+    }
+
+    .weather {
+        bottom: 35px;
+        right: 35px;
+    }
+
+    /* Weather emoticon appears after heading on desktop */
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.4rem;
+    }
+
+    /* Hide mobile SVG on desktop */
+    .weather-icon {
+        display: none;
+    }
+
+    .data-content,
+    .weather-content {
+        gap: 0.4rem;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+/* =====================================
+   EXTRA LARGE SCREENS
+===================================== */
+
+@media screen and (min-width: 1200px) {
+
+    .hero img {
+        height: 750px;
+    }
+
+    .country-data {
+        top: 45px;
+        left: 45px;
+    }
+
+    .weather {
+        bottom: 45px;
+        right: 45px;
+    }
+}
