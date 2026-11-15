@@ -1,5 +1,5 @@
 /* =====================================
-   GLOBAL CSS VARIABLES
+   GLOBAL VARIABLES
 ===================================== */
 
 :root {
@@ -29,10 +29,6 @@ body {
     line-height: 1.6;
 }
 
-/* =====================================
-   HEADER
-===================================== */
-
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -43,13 +39,16 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 1px;
 }
 
 /* =====================================
-   HERO IMAGE
+   MAIN AND HERO IMAGE
 ===================================== */
+
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
 .hero {
     width: 100%;
@@ -68,7 +67,7 @@ header h1 {
 }
 
 /* =====================================
-   COUNTRY DATA AND WEATHER
+   INFORMATION CARDS
 ===================================== */
 
 section {
@@ -88,10 +87,13 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+/* CSS GRID FOR INFORMATION */
+
 .data-content,
 .weather-content {
     display: grid;
-    gap: 0.55rem;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
 }
 
 .data-content p,
@@ -104,7 +106,7 @@ strong {
 }
 
 /* =====================================
-   WEATHER SVG - MOBILE VIEW
+   MOBILE WEATHER ICON
 ===================================== */
 
 .weather-icon {
@@ -128,7 +130,6 @@ footer {
     color: var(--secondary-color);
     text-align: center;
     padding: 1.5rem;
-    margin-top: 1.5rem;
 }
 
 footer p {
@@ -137,7 +138,7 @@ footer p {
 }
 
 /* =====================================
-   LARGE SCREEN / DESKTOP VIEW
+   DESKTOP VIEW
 ===================================== */
 
 @media screen and (min-width: 700px) {
@@ -152,8 +153,6 @@ footer p {
 
     main {
         position: relative;
-        max-width: 1600px;
-        margin: 0 auto;
     }
 
     .hero img {
@@ -164,7 +163,7 @@ footer p {
 
     section {
         position: absolute;
-        width: 310px;
+        width: 320px;
         margin: 0;
         padding: 1.4rem;
         background-color: rgba(255, 255, 255, 0.96);
@@ -182,24 +181,25 @@ footer p {
         right: 35px;
     }
 
-    /* Weather emoticon appears after heading on desktop */
+    /* GRID FOR DATA CARDS */
+
+    .data-content,
+    .weather-content {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    /* DESKTOP WEATHER EMOTICON */
+
     .weather h2::after {
         content: " ⛅";
         margin-left: 0.4rem;
     }
 
-    /* Hide mobile SVG on desktop */
+    /* HIDE MOBILE SVG */
+
     .weather-icon {
         display: none;
-    }
-
-    .data-content,
-    .weather-content {
-        gap: 0.4rem;
-    }
-
-    footer {
-        margin-top: 0;
     }
 }
 
