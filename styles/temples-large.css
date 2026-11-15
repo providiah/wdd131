@@ -1,0 +1,26 @@
+/* Larger-screen layout; mobile-first rules remain in temples.css */
+@media screen and (min-width: 700px) {
+  .header-inner {
+    flex-wrap: nowrap;
+    min-height: 5rem;
+  }
+  .menu-button { display: none; }
+  .primary-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    padding: 0;
+    gap: .35rem;
+  }
+  .primary-nav a { padding: .65rem .85rem; }
+  main { margin-top: 2.6rem; }
+  .temple-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .temple-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

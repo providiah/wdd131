@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A responsive picture album featuring temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Rosemary Obadiah Ereforiokuma">
+    <title>Temple Album | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="temples.html">Temple Album</a>
+            <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+                <a href="#all" data-filter="all" class="active" aria-current="page">Home</a>
+                <a href="#old" data-filter="old">Old</a>
+                <a href="#new" data-filter="new">New</a>
+                <a href="#large" data-filter="large">Large</a>
+                <a href="#small" data-filter="small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+        <p class="intro">A collection of beautiful temples from around the world.</p>
+        <section class="temple-grid" aria-label="Temple photographs">
+            <figure class="temple-card" data-year="old" data-size="large">
+                <img src="images/salt_lake_temple_lds.jpeg" alt="Illustration placeholder for the Salt Lake Temple"
+                    width="640" height="420">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="old" data-size="large">
+                <img src="images/Washington-DC-temple.webp" alt="Illustration placeholder for the Washington D.C. Temple"
+                    width="640" height="420" loading="lazy">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="new" data-size="small">
+                <img src="images/accra_ghana_temple.jpeg" alt="Illustration placeholder for the Accra Ghana Temple"
+                    width="640" height="420" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="new" data-size="small">
+                <img src="images/aba-nigeria-temple.jpg" alt="Illustration placeholder for the Aba Nigeria Temple"
+                    width="640" height="420" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="new" data-size="large">
+                <img src="images/rome-italy-temple.jpg" alt="Illustration placeholder for the Rome Italy Temple"
+                    width="640" height="420" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="new" data-size="small">
+                <img src="images/paris france temple.png" alt="Illustration placeholder for the Paris France Temple"
+                    width="640" height="420" loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="old" data-size="small">
+                <img src="images/london-england-temple.jpg" alt="Illustration placeholder for the London England Temple"
+                    width="640" height="420" loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="new" data-size="large">
+                <img src="images/nairobi-kenya-temple.jpg" alt="Illustration placeholder for the Nairobi Kenya Temple"
+                    width="640" height="420" loading="lazy">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
+            <figure class="temple-card" data-year="old" data-size="small">
+                <img src="images/johannesburg-south-africa-temple.jpg"
+                    alt="Illustration placeholder for the Johannesburg South Africa Temple" width="640" height="420"
+                    loading="lazy">
+                <figcaption>Johannesburg South Africa Temple</figcaption>
+            </figure>
+        </section>
+        <p class="empty-message" hidden>No temples match this category.</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Providence Obadiah Ereforokuma | Nigeria</p>
+        <p>WDD 131: Dynamic Web Fundamentals</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
