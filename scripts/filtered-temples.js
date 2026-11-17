@@ -84,7 +84,7 @@ const temples = [
         dedicated: "2020, February, 16",
         area: 19860,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/durban-south-africa-temple/durban-south-africa-temple-72674.jpg"
-    }
+    },
     {
         templeName: "Nairobi Kenya",
         location: "Nairobi, Kenya",
