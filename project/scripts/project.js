@@ -4,10 +4,10 @@ const products = [
         id: "slip-01",
         name: "Everyday Ease Slippers",
         category: "slippers",
-        audience: ["men", "women"],
+        audience: ["men", "women", "children"],
         description: "A relaxed everyday style for casual moments and easy movement.",
         priceLabel: "Ask for current price",
-        image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=80",
+        image: "https://i.pinimg.com/736x/bc/58/12/bc5812171d34595f4dd4efcb2f072939.jpg",
         imageAlt: "Casual footwear in a clean product setting",
         tag: "Everyday"
     },
