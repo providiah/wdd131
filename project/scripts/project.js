@@ -18,7 +18,7 @@ const products = [
         audience: ["women", "men"],
         description: "A versatile sandal style for outings and everyday wear.",
         priceLabel: "Ask for current price",
-        image: "https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=700&q=80",
+        image: "https://apisap.fabindia.com/medias/20248455-01.jpg?context=bWFzdGVyfGltYWdlc3wxMTgxNDV8aW1hZ2UvanBlZ3xhR1pqTDJnM1pTOHhNVFU1T1RjeU9EZ3hOamsxTURJdk1qQXlORGcwTlRWZk1ERXVhbkJufDk5MmQyZmFiM2Q3NDNmZDI3MzA2ZmQ0NjdlYjIzMDlhZjZlOWQyNGNhM2Q5OGE3MmIwNzNlZWFiMDlhNzM0OWM&aio=w-768",
         imageAlt: "Fashion footwear photographed in a neutral setting",
         tag: "Versatile"
     },
