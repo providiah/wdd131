@@ -1,0 +1,215 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #12345a;
+    color: white;
+    padding: 20px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+.navigation {
+    display: flex;
+    gap: 12px;
+}
+
+.navigation button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navigation button:hover,
+.navigation button.active {
+    background-color: #ffffff;
+    color: #12345a;
+}
+
+.navigation button:focus-visible,
+.menu-button:focus-visible {
+    outline: 3px solid #ffcf40;
+    outline-offset: 3px;
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-button {
+    display: none;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #12345a;
+}
+
+/* TEMPLE GRID */
+
+.temple-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* TEMPLE CARD */
+
+.temple-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    padding: 18px;
+    transition: transform 0.2s ease;
+}
+
+.temple-card:hover {
+    transform: translateY(-5px);
+}
+
+.temple-card h3 {
+    color: #12345a;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.temple-card p {
+    margin: 7px 0;
+    font-size: 0.95rem;
+}
+
+.temple-card strong {
+    color: #12345a;
+}
+
+.temple-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: #e0e0e0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.last-modified {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+    .temple-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 600px) {
+
+    .header-content {
+        flex-direction: row;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        gap: 5px;
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .navigation button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+    }
+
+    .temple-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .temple-card img {
+        height: 230px;
+    }
+}
