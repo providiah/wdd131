@@ -7,7 +7,7 @@ const products = [
         audience: ["men", "women", "children"],
         description: "A relaxed everyday style for casual moments and easy movement.",
         priceLabel: "Ask for current price",
-        image: "https://i.pinimg.com/736x/bc/58/12/bc5812171d34595f4dd4efcb2f072939.jpg",
+        image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=80",
         imageAlt: "Casual footwear in a clean product setting",
         tag: "Everyday"
     },
@@ -18,7 +18,7 @@ const products = [
         audience: ["women", "men"],
         description: "A versatile sandal style for outings and everyday wear.",
         priceLabel: "Ask for current price",
-        image: "https://apisap.fabindia.com/medias/20248455-01.jpg?context=bWFzdGVyfGltYWdlc3wxMTgxNDV8aW1hZ2UvanBlZ3xhR1pqTDJnM1pTOHhNVFU1T1RjeU9EZ3hOamsxTURJdk1qQXlORGcwTlRWZk1ERXVhbkJufDk5MmQyZmFiM2Q3NDNmZDI3MzA2ZmQ0NjdlYjIzMDlhZjZlOWQyNGNhM2Q5OGE3MmIwNzNlZWFiMDlhNzM0OWM&aio=w-768",
+        image: "https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=700&q=80",
         imageAlt: "Fashion footwear photographed in a neutral setting",
         tag: "Versatile"
     },
