@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 Product Review Form. Select a product, rate it, and share your experience.">
+    <meta name="author" content="Providence Obadiah Ereforokuma">
+    <title>Product Review Form | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Product Review</h1>
+        <p>Share your experience and help others choose wisely.</p>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <p class="required-note"><span aria-hidden="true">*</span> Required field</p>
+
+            <fieldset>
+                <legend>Product Information</legend>
+
+                <label for="productName">
+                    Product Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating <span class="required" aria-hidden="true">*</span></legend>
+                <p class="field-help">Select one rating from 1 (lowest) to 5 (highest).</p>
+
+                <div class="rating-options">
+                    <label for="rating1">
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                        <span class="stars" aria-hidden="true">☆</span>
+                        <span>1</span>
+                    </label>
+
+                    <label for="rating2">
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                        <span class="stars" aria-hidden="true">☆☆</span>
+                        <span>2</span>
+                    </label>
+
+                    <label for="rating3">
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                        <span class="stars" aria-hidden="true">☆☆☆</span>
+                        <span>3</span>
+                    </label>
+
+                    <label for="rating4">
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                        <span class="stars" aria-hidden="true">☆☆☆☆</span>
+                        <span>4</span>
+                    </label>
+
+                    <label for="rating5">
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                        <span class="stars" aria-hidden="true">☆☆☆☆☆</span>
+                        <span>5</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Installation Details</legend>
+
+                <label for="installationDate">
+                    Date of Installation <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <p class="field-help">Which features did you find useful? Check all that apply.</p>
+
+                <label class="choice-label" for="durability">
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    Durability
+                </label>
+
+                <label class="choice-label" for="design">
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    Design
+                </label>
+
+                <label class="choice-label" for="performance">
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    Performance
+                </label>
+
+                <label class="choice-label" for="quality">
+                    <input type="checkbox" id="quality" name="features" value="Quality">
+                    Quality
+                </label>
+
+                <label class="choice-label" for="price">
+                    <input type="checkbox" id="price" name="features" value="Price">
+                    Price
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review</legend>
+
+                <label for="writtenReview">Write your review (optional)</label>
+                <textarea id="writtenReview" name="writtenReview" rows="5"
+                    placeholder="Share your experience with this product..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <label for="userName">Your Name (optional)</label>
+                <input type="text" id="userName" name="userName" autocomplete="name" placeholder="Enter your name">
+            </fieldset>
+
+            <input type="submit" value="Submit Review" class="submit-button">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Providence Obadiah Ereforokuma | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review submission confirmation page for WDD 131.">
+    <meta name="author" content="Providence Obadiah Ereforokuma">
+    <title>Review Confirmation | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Review Confirmation</h1>
+        <p>Your feedback matters to us.</p>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2 id="confirmationTitle">Thank You!</h2>
+
+            <p id="confirmationMessage">
+                Your product review has been submitted successfully.
+            </p>
+
+            <div id="reviewDetails" hidden>
+                <p>Product: <strong id="confirmedProduct"></strong></p>
+                <p>Rating: <strong id="confirmedRating"></strong> out of 5</p>
+            </div>
+
+            <p>
+                You have completed
+                <strong id="reviewCount">0</strong>
+                product reviews.
+            </p>
+
+            <a href="form.html">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Providence Obadiah Ereforokuma | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

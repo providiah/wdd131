@@ -1,0 +1,267 @@
+:root {
+    --navy: #14213d;
+    --cream: #f8f5f0;
+    --terracotta: #873817;
+    --gold: #765000;
+    --text: #222222;
+    --white: #ffffff;
+    --border: #767676;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.site-header p {
+    margin: 0.5rem 0 0;
+}
+
+main {
+    width: 100%;
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.required-note {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+.required {
+    color: var(--terracotta);
+    font-weight: bold;
+}
+
+.required-note span {
+    color: var(--terracotta);
+    font-weight: bold;
+}
+
+fieldset {
+    margin: 0 0 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: var(--navy);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 0.7rem 0;
+    font-weight: 600;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    margin-top: 0.35rem;
+    padding: 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--text);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.field-help {
+    margin: 0.2rem 0 0.8rem;
+    color: #444444;
+    font-size: 0.9rem;
+}
+
+.rating-options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.rating-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0.5rem 0.1rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.rating-options input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--terracotta);
+}
+
+.stars {
+    color: var(--gold);
+    font-size: 1.15rem;
+    letter-spacing: 0.02rem;
+}
+
+.choice-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 36px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--terracotta);
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--navy);
+    border-radius: 6px;
+    background-color: var(--navy);
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+a {
+    color: var(--navy);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible,
+.submit-button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
+
+.rating-options label:focus-within {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.2rem 1rem;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem;
+    overflow-wrap: anywhere;
+}
+
+/* Confirmation page */
+.confirmation {
+    padding: 2rem;
+    background-color: var(--white);
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation h2 {
+    color: var(--navy);
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    background-color: var(--navy);
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.confirmation a:hover {
+    background-color: var(--terracotta);
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        margin: 1rem auto;
+        padding: 0 0.7rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .rating-options {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0.2rem;
+    }
+
+    .rating-options label {
+        padding: 0.4rem 0;
+        font-size: 0.85rem;
+    }
+
+    .stars {
+        font-size: 0.9rem;
+    }
+
+    .site-header h1 {
+        font-size: 1.6rem;
+    }
+}
