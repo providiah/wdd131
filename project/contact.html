@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Providiahnelly in Nigeria to ask about slippers, sandals, palm slippers, sizes, availability, and footwear orders.">
+    <meta name="author" content="Providence Obadiah Ereforokuma">
+    <meta name="theme-color" content="#14213d">
+    <title>Contact &amp; Orders | Providiahnelly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Providiahnelly home"><span class="brand-mark">P</span><span
+                    class="brand-name">PROVIDIAHNELLY<small>STEP OUT IN STYLE</small></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+                aria-label="Open navigation"><span></span><span></span><span></span></button>
+            <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+                    href="collections.html">Collections</a><a class="active" href="contact.html"
+                    aria-current="page">Contact &amp; Orders</a></nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero contact-hero">
+            <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+            <h1>Let’s talk <em>footwear.</em></h1>
+            <p>Ask about a style, check availability, or send an order enquiry. Complete the form and we will show you a
+                confirmation on this page.</p>
+        </section>
+
+        <section class="contact-layout section-pad">
+            <aside class="contact-aside">
+                <p class="eyebrow">CONTACT DETAILS</p>
+                <h2>Here to help with your <em>next step.</em></h2>
+                <p>For product questions and order enquiries, contact Providiahnelly using the details below.</p>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">☎</span>
+                    <div><strong>Phone</strong><a href="tel:+2349123188881">+234 912 318 8881</a></div>
+                </div>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">⌖</span>
+                    <div><strong>Location</strong><span>Nigeria</span></div>
+                </div>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">✉</span>
+                    <div><strong>Enquiries</strong><span>Use the form on this page</span></div>
+                </div>
+                <div class="contact-note"><strong>A quick note</strong>
+                    <p>This website is a student project. The form demonstrates browser-side validation and local
+                        storage; it does not transmit your details to a business inbox.</p>
+                </div>
+            </aside>
+
+            <form class="contact-form" id="enquiry-form">
+                <div class="form-heading">
+                    <p class="eyebrow">SEND AN ENQUIRY</p>
+                    <h2>How can we <em>help?</em></h2>
+                    <p>Fields marked with an asterisk (*) are required.</p>
+                </div>
+                <div class="form-row">
+                    <div class="form-field"><label for="full-name">Full name *</label><input id="full-name"
+                            name="fullName" type="text" autocomplete="name" required minlength="2" maxlength="70"></div>
+                    <div class="form-field"><label for="email">Email address *</label><input id="email" name="email"
+                            type="email" autocomplete="email" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field"><label for="phone">Phone number</label><input id="phone" name="phone"
+                            type="tel" autocomplete="tel" placeholder="+234"></div>
+                    <div class="form-field"><label for="interest">What are you interested in? *</label><select
+                            id="interest" name="interest" required>
+                            <option value="" selected disabled>Select a category</option>
+                            <option value="Slippers">Slippers</option>
+                            <option value="Sandals">Sandals</option>
+                            <option value="Palm slippers">Palm slippers</option>
+                            <option value="General enquiry">General enquiry</option>
+                        </select></div>
+                </div>
+                <div class="form-field"><label for="audience">Who are you shopping for?</label><select id="audience"
+                        name="audience">
+                        <option value="Not specified">Choose an option</option>
+                        <option value="Men">Men</option>
+                        <option value="Women">Women</option>
+                        <option value="Children">Children</option>
+                        <option value="Family">Family</option>
+                    </select></div>
+                <div class="form-field"><label for="message">Your message *</label><textarea id="message" name="message"
+                        rows="5" required minlength="10" maxlength="700"
+                        placeholder="Tell us the style, size, or information you would like to ask about."></textarea>
+                </div>
+                <label class="consent-field"><input type="checkbox" name="consent" id="consent" required><span>I
+                        understand this demonstration form stores the enquiry in this browser and does not send it to an
+                        email address. *</span></label>
+                <button class="button button-primary form-submit" type="submit">Submit enquiry <span
+                        aria-hidden="true">→</span></button>
+                <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div><a class="brand brand-footer" href="index.html"><span class="brand-mark">P</span><span
+                        class="brand-name">PROVIDIAHNELLY<small>STEP OUT IN STYLE</small></span></a>
+                <p>Footwear for everyday comfort and personal style.</p>
+            </div>
+            <div>
+                <h2>Explore</h2><a href="index.html">Home</a><a href="collections.html">Collections</a><a
+                    href="references.html">References</a>
+            </div>
+            <div>
+                <h2>Get in touch</h2>
+                <p>Nigeria</p><a href="tel:+2349123188881">+234 912 318 8881</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="current-year"></span> Providiahnelly. All rights
+                reserved.</span><span>Designed with care for every step.</span></div>
+    </footer>
+</body>
+
+</html>

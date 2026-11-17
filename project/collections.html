@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse Providiahnelly slippers, sandals, and palm slippers for men, women, and children. Filter the collection and save your favourite styles.">
+    <meta name="author" content="Providence Obadiah Ereforokuma">
+    <meta name="theme-color" content="#14213d">
+    <title>Collections | Providiahnelly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Providiahnelly home"><span class="brand-mark">P</span><span
+                    class="brand-name">PROVIDIAHNELLY<small>STEP OUT IN STYLE</small></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+                aria-label="Open navigation"><span></span><span></span><span></span></button>
+            <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+                    class="active" href="collections.html" aria-current="page">Collections</a><a
+                    href="contact.html">Contact &amp; Orders</a></nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <p class="eyebrow">THE PROVIDIAHNELLY COLLECTION</p>
+            <h1>Find your <em>everyday pair.</em></h1>
+            <p>Explore relaxed slippers, versatile sandals, and palm slippers. Choose a category or audience to narrow
+                your search.</p>
+        </section>
+
+        <section class="collection-section section-pad">
+            <div class="collection-toolbar">
+                <div class="filter-group">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter">
+                        <option value="all">All footwear</option>
+                        <option value="slippers">Slippers</option>
+                        <option value="sandals">Sandals</option>
+                        <option value="palm">Palm slippers</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="audience-filter">Shop for</label>
+                    <select id="audience-filter">
+                        <option value="all">Everyone</option>
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="children">Children</option>
+                    </select>
+                </div>
+                <div class="filter-group search-group">
+                    <label for="product-search">Search styles</label>
+                    <input id="product-search" type="search" placeholder="Try “casual” or “classic”">
+                </div>
+            </div>
+            <div class="results-line">
+                <p id="results-count" aria-live="polite">Showing all styles</p>
+                <p><span id="favourite-count">0</span> saved favourites</p>
+            </div>
+            <div class="product-grid collection-grid" id="all-products" aria-live="polite"></div>
+            <p class="empty-state" id="empty-state" hidden>No styles match those filters. Try another category or search
+                term.</p>
+        </section>
+
+        <section class="collection-help section-pad">
+            <div>
+                <p class="eyebrow">NEED HELP CHOOSING?</p>
+                <h2>Let’s find your <em>right fit.</em></h2>
+                <p>Ask us about available styles, sizes, and ordering. We will be happy to help you with your enquiry.
+                </p>
+            </div>
+            <a class="button button-primary" href="contact.html">Contact Providiahnelly</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div><a class="brand brand-footer" href="index.html"><span class="brand-mark">P</span><span
+                        class="brand-name">PROVIDIAHNELLY<small>STEP OUT IN STYLE</small></span></a>
+                <p>Footwear for everyday comfort and personal style.</p>
+            </div>
+            <div>
+                <h2>Explore</h2><a href="index.html">Home</a><a href="contact.html">Contact &amp; Orders</a><a
+                    href="references.html">References</a>
+            </div>
+            <div>
+                <h2>Get in touch</h2>
+                <p>Nigeria</p><a href="tel:+2349123188881">+234 912 318 8881</a><a href="contact.html">Send an
+                    enquiry</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="current-year"></span> Providiahnelly. All rights
+                reserved.</span><span>Designed with care for every step.</span></div>
+    </footer>
+</body>
+
+</html>
