@@ -85,6 +85,13 @@ const temples = [
         area: 19860,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/durban-south-africa-temple/durban-south-africa-temple-72674.jpg"
     }
+    {
+        templeName: "Nairobi Kenya",
+        location: "Nairobi, Kenya",
+        dedicated: "2025, May, 18",
+        area: 19870,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-61298.jpg"
+    }
 ];
 
 
